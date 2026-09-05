@@ -1,0 +1,34 @@
+{
+    "default": {
+        "DP-2": {
+            "mode": "1920x1080@240",
+            "pos": "0x0"
+        },
+        "DP-3":{
+            "mode": "1920x1080@144",
+            "pos": "1920x0"
+        },
+        "HDMI-A-1":{
+            "mode": "1920x1080@60",
+            "pos": "0x-1080"
+        }
+    },
+    "modes": {
+        "all": {
+            "schema": [ "DP-2", "DP-3", "HDMI-A-1" ],
+            "exec": ["ags quit && ags run"]
+        },
+        "normal": {
+            "schema": [ "DP-2", "DP-3"],
+            "exec": ["ags quit && ags run"]
+        },
+        "single": {
+            "schema": ["DP-2"],
+            "exec": ["ags quit && ags run"]
+        },
+        "tv":{
+            "schema": ["HDMI-A-1"],
+            "exec": ["ags quit && ags run"]
+        }
+    }
+}
